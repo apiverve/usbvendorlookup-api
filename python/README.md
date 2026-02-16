@@ -44,7 +44,10 @@ from apiverve_usbvendorlookup.apiClient import UsbvendorlookupAPIClient
 # Initialize the client with your APIVerve API key
 api = UsbvendorlookupAPIClient("[YOUR_API_KEY]")
 
-query = { "vendorid": "05AC", "productid": "8290" }
+query = {
+    "vendorid": "05AC",
+    "productid": "8290"
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "vendorid": "05AC", "productid": "8290" }
+query = {
+    "vendorid": "05AC",
+    "productid": "8290"
+}
 ```
 
 ###### Simple Request
@@ -124,7 +130,10 @@ from apiverve_usbvendorlookup.apiClient import UsbvendorlookupAPIClient, Usbvend
 
 api = UsbvendorlookupAPIClient("[YOUR_API_KEY]")
 
-query = { "vendorid": "05AC", "productid": "8290" }
+query = {
+    "vendorid": "05AC",
+    "productid": "8290"
+}
 
 try:
     result = api.execute(query)
@@ -145,7 +154,10 @@ from apiverve_usbvendorlookup.apiClient import UsbvendorlookupAPIClient, Usbvend
 
 api = UsbvendorlookupAPIClient("[YOUR_API_KEY]")
 
-query = { "vendorid": "05AC", "productid": "8290" }
+query = {
+    "vendorid": "05AC",
+    "productid": "8290"
+}
 
 try:
     result = api.execute(query)
@@ -179,7 +191,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_usbvendorlookup.apiClient import UsbvendorlookupAPIClient, UsbvendorlookupAPIClientError
 
-query = { "vendorid": "05AC", "productid": "8290" }
+query = {
+    "vendorid": "05AC",
+    "productid": "8290"
+}
 
 # Using context manager ensures proper cleanup
 with UsbvendorlookupAPIClient("[YOUR_API_KEY]") as api:
@@ -205,7 +220,10 @@ from apiverve_usbvendorlookup.apiClient import UsbvendorlookupAPIClient
 # Enable debug mode
 api = UsbvendorlookupAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "vendorid": "05AC", "productid": "8290" }
+query = {
+    "vendorid": "05AC",
+    "productid": "8290"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -220,8 +238,12 @@ from apiverve_usbvendorlookup.apiClient import UsbvendorlookupAPIClient
 
 api = UsbvendorlookupAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "vendorid": "05AC",
+    "productid": "8290"
+}
+
 try:
-    query = { "vendorid": "05AC", "productid": "8290" }
     result = api.execute(query)
     print(result)
 finally:
