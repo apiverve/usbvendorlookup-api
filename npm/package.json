@@ -1,12 +1,12 @@
 {
   "name": "@apiverve/usbvendorlookup",
-  "version": "1.1.14",
+  "version": "1.2.0",
   "description": "USB Vendor Lookup allows you to identify USB device manufacturers and products by their vendor ID and product ID. It uses the Linux USB ID Repository, which contains thousands of USB vendor and product identifiers.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
   },
   "files": [
     "index.js",
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    ""
+    "usb vendor lookup", "usb id lookup", "usb vendor id", "usb product id", "usb device identification"
   ],
   "author": {
     "name": "APIVerve",
@@ -41,8 +41,7 @@
     "dotenv": "^16.4.7"
   },
   "dependencies": {
-    "node-fetch": "^3.3.2",
-    "promise": "^8.3.0",
-    "axios": "1.13.2"
+    "axios": "1.13.2",
+    "form-data": "^4.0.1"
   }
 }
