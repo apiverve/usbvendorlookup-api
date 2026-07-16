@@ -25,6 +25,9 @@ namespace APIVerve.API.USBVendorLookup
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -33,15 +36,27 @@ namespace APIVerve.API.USBVendorLookup
         public string VendorId { get; set; }
 
         [JsonProperty("productId")]
-        public long ProductId { get; set; }
+        public long? ProductId { get; set; }
 
         [JsonProperty("found")]
-        public bool Found { get; set; }
+        public bool? Found { get; set; }
 
         [JsonProperty("vendor")]
         public string Vendor { get; set; }
 
         [JsonProperty("product")]
         public string Product { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
