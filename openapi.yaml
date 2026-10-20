@@ -19,7 +19,7 @@ servers:
 paths:
   /v1/usbvendorlookup:
     get:
-      summary: Lookup USB Vendor
+      summary: USB Vendor Lookup
       description: Lookup USB vendor and optionally product information by ID
       operationId: usbvendorlookup
       parameters:
